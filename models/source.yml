@@ -1,0 +1,7 @@
+version: 2
+sources:
+  - name: datafeed_shared_schema
+    database: "{{(PROJECT_DB)}}"
+    schema: ROW_SCHEMA
+    tables:
+      - name: ROW_CUSTOMERS

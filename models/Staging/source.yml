@@ -5,3 +5,4 @@ sources:
     schema: ROW_SCHEMA
     tables:
       - name: ROW_CUSTOMERS
+      - name: raw_orders

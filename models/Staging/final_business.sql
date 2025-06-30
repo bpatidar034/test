@@ -3,7 +3,7 @@ with customer as (
 
 select customer_id,
 customer_name
-from ROW_CUSTOMERS
+from {{source("datafeed_shared_schema",'ROW_CUSTOMERS')}}
 ), 
 order_tbl as (
 

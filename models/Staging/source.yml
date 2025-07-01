@@ -7,3 +7,16 @@ sources:
       - name: ROW_CUSTOMERS
       - name: raw_orders
       - name: customers
+      - name: stg_orders
+        columns:
+          - name: order_id
+            tests:
+              - unique
+              - not_null
+          - name: ship_mode
+            tests:
+              - accepted_values:
+                  values: ['First Class','Same Day','Second Class','Standard Class']
+
+             
+            

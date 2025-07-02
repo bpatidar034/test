@@ -17,6 +17,15 @@ sources:
             tests:
               - accepted_values:
                   values: ['First Class','Same Day','Second Class','Standard Class']
+          - name: order_id
+            tests:
+              - relationships:
+                  to: ref('order1')
+                  field: order_id
+
+
+         
+                   
 
              
             

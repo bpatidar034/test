@@ -1,0 +1,2 @@
+{{config(materialized='table')}}
+{{compare_row_counts('PROJECT_DB.ROW_SCHEMA.RAW_EMPLOYEE_SALARY','PROJECT_DB.ROW_SCHEMA.RAW_ORDERS','PROJECT_DB.ROW_SCHEMA.STG_ORDERS')}}

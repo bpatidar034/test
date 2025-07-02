@@ -7,6 +7,8 @@ sources:
       - name: ROW_CUSTOMERS
       - name: raw_orders
       - name: customers
+      - name: raw_employee_salary
+      - name: raw_products
       - name: stg_orders
         columns:
           - name: order_id

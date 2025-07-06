@@ -7,7 +7,8 @@ o.order_status,
 i.order_total_quantity,
 c.customer_key,
 c.customer_name,
-n.customer_nation
+n.customer_nation,
+i.order_unique_items
 from {{ref('stg_order')}} as o
 inner join {{ref('order_lineitem')}} as i 
 on o.order_key=i.order_key

@@ -1,7 +1,7 @@
 {{config(materialized='table')}}
 with tb1 as (
 select o_orderkey as order_key,
-o_totalprice as order_detail,
+o_totalprice as order_total,
 cast(o_orderdate as date) as order_date,
 date_trunc('month',cast(o_orderdate as date)) as order_month,
 case
